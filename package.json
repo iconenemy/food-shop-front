@@ -26,8 +26,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "postinstall": "npx --package=serve",
-    "build": "rimraf build && react-scripts build && serve -s build",
+    "postinstall": "npx --package=serve && rimraf build && react-scripts build",
+    "build": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
