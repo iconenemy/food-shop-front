@@ -26,7 +26,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "yarn && rimraf build && react-scripts build && serve -s build",
+    "postinstall": "npx --package=serve",
+    "build": "rimraf build && react-scripts build && serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -53,6 +54,7 @@
   "author": "iconenemy <iconenemy@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3", 
+    "serve": "^14.2.0"
   }
 }
